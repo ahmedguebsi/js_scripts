@@ -1,0 +1,157 @@
+.aes-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .aes-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group, .output-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label, .output-group label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input, .output-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-group input::placeholder, .output-group textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .output-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .encrypt-btn, .decrypt-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .encrypt-btn {
+    background-color: #4CAF50;
+  }
+  
+  .encrypt-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .decrypt-btn {
+    background-color: #f44336;
+  }
+  
+  .decrypt-btn:hover {
+    background-color: #e53935;
+  }
+  .aes-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .aes-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group, .output-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label, .output-group label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input, .output-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-group input::placeholder, .output-group textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .output-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .encrypt-btn, .decrypt-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .encrypt-btn {
+    background-color: #4CAF50;
+  }
+  
+  .encrypt-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .decrypt-btn {
+    background-color: #f44336;
+  }
+  
+  .decrypt-btn:hover {
+    background-color: #e53935;
+  }
+    
