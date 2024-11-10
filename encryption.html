@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+
+    <h3>AES Encryption and Decryption</h3>
+    <p>Original Message: "Hello, World!"</p>
+    <p>Encrypted Message: <span id="encrypted"></span></p>
+    <p>Decrypted Message: <span id="decrypted"></span></p>
+
+    <h3>Cross-Site Scripting (XSS) Protection</h3>
+    <p>Enter text (try <code>&lt;script&gt;alert("XSS")&lt;/script&gt;</code>):</p>
+    <input type="text" id="userInput" class="input-box">
+    <button onclick="displaySanitizedInput()">Submit</button>
+
+    <p class="output-box">Sanitized Output: <span id="output"></span></p>
+
+    <script>
+
+        const message = "hello world";
+        const secret_key = "my_secret_key";
+
+        // Encrypt
+        const encrypted = CryptoJS.AES.encrypt(message, secret_key).toString();
+        document.getElementById("encrypted").innerHTML = encrypted;
+
+        // Decrypt
+        const decrypted = CryptoJS.AES.decrypt(encrypted, secret_key).toString(CryptoJS.enc.Utf8);
+        document.getElementById("decrypted").innerHTML = decrypted;
+    </script>
+
+    <script>
+        function sanitize(input){
+            return input
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+
+        }
+        function displaySanitizedInput() {
+            const userInput = document.getElementById("userInput").value;
+            document.getElementById("output").innerText = sanitize(userInput);
+
+        }
+
+    </script>
+    
+</body>
+</html>
